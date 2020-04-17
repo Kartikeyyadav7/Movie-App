@@ -1,0 +1,23 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	line-height: 1.6;
+	font-weight: 400;
+	font-size: 1.1rem;
+	color: #333;
+}
+.Genre-items {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+@media (max-width: 500px) {
+	.Genre-items {
+		display: media;
+		grid-template-columns: 1fr;
+	}
+}

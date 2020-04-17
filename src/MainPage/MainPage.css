@@ -1,0 +1,94 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 10px;
+}
+body {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+}
+
+.MainPage-main {
+	margin: 2rem 0;
+}
+.container {
+	width: 90vw;
+	max-width: 1120px;
+	margin: 0 21rem;
+	overflow: auto;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 5rem;
+}
+.container svg {
+	width: 100%;
+	height: 80%;
+	margin-right: 20rem;
+	align-self: flex-end;
+	justify-self: flex-end;
+}
+.searchContent {
+	margin: 5rem 0;
+	width: 100%;
+}
+.MainPage-title-primary {
+	display: block;
+	font-size: 4.5rem;
+	font-weight: 400;
+	font-family: 'Poppins', sans-serif;
+	margin-right: 15rem;
+	color: #551a92;
+}
+.MainPage-title-secondary {
+	display: block;
+	font-size: 2.5rem;
+	font-weight: 200;
+	line-height: 1.6;
+	padding-bottom: 5rem;
+	color: #551a92;
+}
+.MainPage-input {
+	font-size: 1.5rem;
+	width: 40rem;
+	border: 1px solid #999;
+	border-radius: 0.3rem;
+	padding: 1rem .8rem;
+	outline: none;
+	white-space: nowrap;
+	-webkit-user-select: none;
+	cursor: pointer;
+	text-shadow: .1rem 0.1rem #fff;
+	font-weight: 400;
+	display: inline-block;
+	margin-bottom: 1.5rem;
+}
+.MainPage-link {
+	display: flex;
+	text-decoration: none;
+
+	background-color: #e8ba65;
+	padding: .3rem 1rem;
+	color: white;
+	background-color: #536dfe;
+	border-radius: 0.5rem;
+	text-align: start;
+	margin-right: 30rem;
+}
+
+.MainPage-link:hover {
+	box-shadow: 0 1.2rem 1.6rem 0 rgba(0, 0, 0, 0.24), 0 1.7rem 5.0rem 0 rgba(0, 0, 0, 0.19);
+	color: white;
+}
+
+@media (max-width: 500px) {
+	.container {
+		margin: 0 1rem;
+	}
+	.container svg {
+		display: none;
+	}
+}

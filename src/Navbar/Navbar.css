@@ -1,0 +1,89 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0%;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+}
+
+.navbar-container {
+	font-size: 1.2rem;
+	padding-top: 0.3rem;
+	padding-bottom: 0.3rem;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-self: flex-end;
+}
+
+.navbar-nav {
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.navbar-nav a {
+	text-decoration: none;
+	padding: 0 1rem;
+	font-size: 1.5rem;
+}
+.navbar-nav a:hover {
+	color: #555;
+}
+
+.navbar-logo {
+	font-size: 2rem;
+	padding-left: 21rem;
+}
+.menu-btn {
+	cursor: pointer;
+	position: absolute;
+	top: 0.2rem;
+	right: 3rem;
+	z-index: 2;
+	display: none;
+}
+.navbar-logo a {
+	text-decoration: none;
+}
+@media (max-width: 500px) {
+	.navbar-logo {
+		padding-right: 2rem;
+		padding-right: -10rem;
+		margin: 0rem -20rem;
+	}
+	.menu-btn {
+		display: block;
+	}
+	.navbar-nav {
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: rgb(83, 109, 254);
+		width: 50%;
+		height: 100%;
+		border-right: #ccc 1px solid;
+		opacity: 0.9;
+		padding: 3rem;
+		transform: translateX(-500px);
+		color: whitesmoke;
+		transition: transform 0.5s ease-in-out;
+	}
+	.navbar-nav a {
+		color: white;
+	}
+	.navbar-nav li {
+		padding: 1rem;
+		border-bottom: #ccc solid 0.1rem;
+		font-size: 1.4rem;
+	}
+	.navbar-nav.show {
+		transform: translateX(-10px);
+	}
+
+	.navbar-nav li:last-child {
+		border-bottom: 0;
+	}
+}

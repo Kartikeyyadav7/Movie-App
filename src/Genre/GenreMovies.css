@@ -1,0 +1,65 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	line-height: 1.6;
+	font-weight: 400;
+	font-size: 1.1rem;
+	color: #333;
+}
+.GenreMovies-container:hover {
+	box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+}
+.GenreMovies-link {
+	display: inline-block;
+	text-decoration: none;
+	padding: 3px 10px;
+	color: white;
+	background-color: #536dfe;
+	border-radius: 0.5rem;
+	justify-self: start;
+	font-size: 1.5rem;
+}
+.GenreMovies-container {
+	width: 1000px;
+	margin: 2rem 21rem;
+	overflow: auto;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 1rem;
+}
+.GenreMovies-content {
+	justify-self: start;
+}
+.GenreMovies-img {
+	justify-self: center;
+	margin: 1rem;
+	border: 0.5rem solid #536dfe;
+}
+.GenreMovies-title {
+	font-size: 2rem;
+}
+
+@media (max-width: 500px) {
+	.GenreMovies-container {
+		margin: 2rem 1rem;
+		display: grid;
+		grid-template-columns: 1fr;
+		width: 50rem;
+	}
+	.GenreMovies-img {
+		margin: 1rem -2rem;
+		padding: -5rem 0rem;
+	}
+	.GenreMovies-content {
+		justify-self: center;
+		text-align: center;
+	}
+	.GenreMovies-link {
+		margin-bottom: 1rem;
+	}
+}

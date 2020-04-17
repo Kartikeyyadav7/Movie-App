@@ -1,0 +1,84 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	line-height: 1.6;
+	font-weight: 400;
+	font-size: 1.1rem;
+	color: #333;
+}
+
+.MovieCard-container {
+	width: 85rem;
+	margin: 8rem auto;
+	background-color: #faf9f9;
+	box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+	overflow: auto;
+	display: flex;
+	height: 100%;
+	align-items: center;
+	justify-content: center;
+}
+
+.MovieCard-img {
+	width: 50%;
+	margin: 1rem 1rem;
+}
+
+.MovieCard-container-title {
+	line-height: 1.6;
+	font-weight: 600;
+	font-size: 3rem;
+	align-self: flex-end;
+	background-color: #fae2e2;
+	box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.2);
+	margin: 1rem 0.5rem;
+	text-align: center;
+}
+.MovieCard-container-overview {
+	margin: 1rem 1rem;
+	font-size: 1.5rem;
+	text-align: center;
+}
+.MovieCard-container-tagline {
+	font-size: 2rem;
+	line-height: 1.2;
+	text-align: center;
+}
+.MovieCard-container-releasedate {
+	font-size: 2rem;
+	text-align: center;
+}
+.MovieCard-btn {
+	display: inline-block;
+	background-color: #a8aff8;
+	border-radius: 10px;
+	border: 4px double #cccccc;
+	color: #eeeeee;
+	text-align: center;
+	font-size: 2rem;
+	padding: 10px;
+	width: 200px;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin: 2px;
+	margin-left: 12rem;
+	margin-bottom: 0.5rem;
+}
+button:hover {
+	transform: translateY(-2px);
+	background-color: #3b4bef;
+}
+@media (max-width: 500px) {
+	.MovieCard-container {
+		width: 45rem;
+		flex-direction: column;
+	}
+}
